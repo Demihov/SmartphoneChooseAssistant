@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SmartphoneChooseAssistant/bin/Debug/net6.0
+/.vs/SmartphoneChooseAssistant/FileContentIndex
+/SmartphoneChooseAssistant/obj
