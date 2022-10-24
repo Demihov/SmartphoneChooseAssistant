@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SmartphoneChooseAssistant.WebApp/1.0.0": {
+        "dependencies": {
+          "SmartphoneChooseAssistant": "1.0.0"
+        },
+        "runtime": {
+          "SmartphoneChooseAssistant.WebApp.dll": {}
+        }
+      },
+      "SmartphoneChooseAssistant/1.0.0": {
+        "runtime": {
+          "SmartphoneChooseAssistant.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartphoneChooseAssistant.WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SmartphoneChooseAssistant/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
