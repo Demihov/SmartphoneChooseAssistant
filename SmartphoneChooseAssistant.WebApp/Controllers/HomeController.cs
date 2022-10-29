@@ -2,9 +2,9 @@
 using FuzzyLogicController.Interfaces;
 using FuzzyLogicController.Logic;
 using Microsoft.AspNetCore.Mvc;
+using SmartphoneChooseAssistant.Services;
 using SmartphoneChooseAssistant.WebApp.Models;
 using System.Diagnostics;
-
 
 namespace SmartphoneChooseAssistant.WebApp.Controllers
 {
@@ -22,9 +22,10 @@ namespace SmartphoneChooseAssistant.WebApp.Controllers
         public IActionResult Privacy() => View();
 
 
+
         public IActionResult Result(UserPreferencesModel model)
         {
-            var seedRules = new SeedRules();
+            /*var seedRules = new SeedRules();
 
             //GetNewDates(ram)
             seedRules.Rom.Min = 16;
@@ -37,7 +38,9 @@ namespace SmartphoneChooseAssistant.WebApp.Controllers
             seedRules.Battery.Max = 7_000;
 
             seedRules.Price.Min = 5_000;
-            seedRules.Price.Max = 70_000;
+            seedRules.Price.Max = 70_000;*/
+
+             SeedRules seedRules = SeedRulesExremumsService.GetSeedRulesWithExtremums();
 
             // Define Rules
             var fuzzyRuleCollection = seedRules.GetRulesBase();
@@ -63,6 +66,6 @@ namespace SmartphoneChooseAssistant.WebApp.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }  
     }
 }

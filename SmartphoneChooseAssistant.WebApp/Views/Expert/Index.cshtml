@@ -1,0 +1,69 @@
+﻿@model ExpertModel
+
+@{
+	ViewData["Title"] = "Expert Page";
+}
+
+<style>
+	input[type=number]
+	{
+		width: 45%;
+		display: inline-block;
+		margin: 5px;
+	}
+	label{
+		    margin-top: 10px;
+	}
+</style>
+<div style="display: flex; justify-content: center;">
+	<form method="post" action="Expert/Result"
+		  style="max-width: 600px; width: 100%; border: gray solid 1px; border-radius: 10px; padding: 15px">
+		
+		@if ((bool)ViewData["askPrice"])
+		{
+		<div class="mb-3 row">
+			<label class="form-label col-4">Price (min, max)</label>			
+			<div class="col-8">
+			<input asp-for="PriceMin" type="number" id="priceMinInput" class="form-control" min="0" value='@ViewData["PriceMin"]'>
+			<input asp-for="PriceMax" type="number" id="priceMaxInput" class="form-control" min="0" value='@ViewData["PriceMax"]'>
+			</div>
+		</div>
+		}
+		@if ((bool)ViewData["askRom"])
+		{
+		<div class="mb-3 row">
+			<label class="form-label col-4">ROM (min, max)</label>
+			<div class="col-8">
+			<input asp-for="RomMin" type="number" id="romMinInput" class="form-control" min="0" value='@ViewData["RomMin"]'>
+			<input asp-for="RomMax" type="number" id="romMaxInput" class="form-control" min="0" value='@ViewData["RomMax"]'>
+			</div>
+		</div>
+		}
+		
+		
+		@if ((bool)ViewData["askBattery"])
+		{
+		<div class="mb-3 row">
+			<label class="form-label col-4">Battery (min, max)</label>
+			<div class="col-8">
+			<input asp-for="BatteryMin" type="number" id="batteryMinInput" class="form-control" min="0" value='@ViewData["BatteryMin"]'>
+			<input asp-for="BatteryMax" type="number" id="batteryMaxInput" class="form-control" min="0" value='@ViewData["BatteryMax"]'>
+			</div>
+		</div>
+		}
+
+		
+		@if ((bool)ViewData["askCamera"])
+		{
+		<div class="mb-3 row">
+			<label class="form-label col-4">Camera (min, max)</label>
+			<div class="col-8">
+			<input asp-for="CameraMin" type="number" id="cameraMinInput" class="form-control" min="0" value='@ViewData["CameraMin"]'>
+			<input asp-for="CameraMax" type="number" id="cameraMaxInput" class="form-control" min="0" value='@ViewData["CameraMax"]'>
+			</div>
+		</div>
+		}
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+

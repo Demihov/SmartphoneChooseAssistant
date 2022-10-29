@@ -1,6 +1,8 @@
 //using SmartphoneChooseAssistant.BLL.Interfaces;
 //using SmartphoneChooseAssistant.BLL.Services;
 
+using SmartphoneChooseAssistant.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -31,4 +33,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
+SeedRulesExremumsService.InitSeedRulesExtremums();
 app.Run();
