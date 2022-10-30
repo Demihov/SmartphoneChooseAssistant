@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\SmartphoneChooseAssistant\SmartphoneChooseAssistant\SmartphoneChooseAssistant.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/SmartphoneChooseAssistant/SmartphoneChooseAssistant/SmartphoneChooseAssistant.WebApp/Views/Expert/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SmartphoneChooseAssistant/SmartphoneChooseAssistant/SmartphoneChooseAssistant.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

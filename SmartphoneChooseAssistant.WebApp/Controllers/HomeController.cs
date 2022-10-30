@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using SmartphoneChooseAssistant.Services;
 using SmartphoneChooseAssistant.WebApp.Models;
 using System.Diagnostics;
+using SmartphoneChooseAssistant.WebApp.ViewChooser;
 
 namespace SmartphoneChooseAssistant.WebApp.Controllers
 {
@@ -58,8 +59,8 @@ namespace SmartphoneChooseAssistant.WebApp.Controllers
                 new FuzzyRuleEvaluator());
 
             var result = fuzzyLogicService.StartProcess();
-
-            return View(result);
+            
+            return View((object)ViewSelector.SelectView(result));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

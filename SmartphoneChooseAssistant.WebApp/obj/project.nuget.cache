@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iQMGKRLDRkmUP7jHHEdIElKsY4hYWPsaizbLcN/169I5u4CefvzRVqTYMt9zMhZcu0L+R55lE1EZM9jvqKf0pw==",
+  "dgSpecHash": "cXdp4D6dyFK+kSBx0FgwWmfUVGciBcbZNbZUe3eYFULVOfjxAP13f7Kg3LDtTftp4p8ziKgLA36BnsVfxAw2+A==",
   "success": true,
   "projectFilePath": "D:\\SmartphoneChooseAssistant\\SmartphoneChooseAssistant\\SmartphoneChooseAssistant.WebApp\\SmartphoneChooseAssistant.WebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bohdan\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512"
+  ],
   "logs": []
 }
